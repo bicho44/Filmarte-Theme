@@ -135,7 +135,7 @@ require get_template_directory() . '/inc/extras.php';
 require get_template_directory() . '/inc/customizer.php';
 
 /**
- * Customizer additions.
+ * IMGD Framework conection
  */
 require get_template_directory() . '/imgd/imgd_funciones.php';
 

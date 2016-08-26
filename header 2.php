@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Filmarte
+ * @package Chino_Leiva
  */
 
 ?><!DOCTYPE html>
@@ -22,12 +22,10 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'filmarte' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'chinoleiva' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-
-		<header id="masthead" class="site-header" role="banner">
-			<?php get_template_part('template-parts/menu','bootstrap'); ?>
-		</header><!-- #masthead -->
-
+		<?php get_template_part('template-parts/menu','bootstrap'); ?>
 	</header><!-- #masthead -->
+
+	<div id="content" class="site-content container">

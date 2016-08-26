@@ -51,9 +51,9 @@
   display:  inline-block;
   position: relative;
   a {
-    color:   #000;
+    color:   @navbar-default-link-color;
     &:hover {
-      color:   @brand-primary;
+      color:  darken(@navbar-default-link-hover-color, 20%);
     }
   }
 }
@@ -63,12 +63,12 @@
   display:        inline-block;
   padding:        0 5px;
   font-family:    'FontAwesome', sans-serif;
-  font-size:      20px;
+  font-size:      24px;
   vertical-align: top;
 
   -webkit-font-smoothing: antialiased;
   &:hover {
-    color:   @brand-primary;
+    color:   @navbar-default-link-hover-color;
   }
 
 }
@@ -138,9 +138,6 @@
 
   }
 }
-
-
-
 
 #menu-social li a[href*="wordpress.org"]::before,
 #barra-social li a[href*="wordpress.com"]::before {
