@@ -6510,6 +6510,25 @@ animation:         KEYFRAME-NAME 5s infinite;
   left: 0;
   z-index: 500;
 }
+/* Colores en los Links */
+.navbar li {
+  border-bottom: 2px solid;
+}
+.navbar .contenidotv {
+  border-bottom-color: #da251c;
+}
+.navbar .agencia {
+  border-bottom-color: #FCE87D;
+}
+.navbar .eventos {
+  border-bottom-color: #416058;
+}
+.navbar .quienes {
+  border-bottom-color: #76c5f0;
+}
+.navbar .contacto {
+  border-bottom-color: #595d9c;
+}
 .navbar-brand {
   padding: 0 15px;
 }
