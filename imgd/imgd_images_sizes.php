@@ -70,7 +70,7 @@ function img_get_size_thumbnail()
  *                      values in pixels (in that order).
  * @return string A source size value for use in a content image 'sizes' attribute.
  */
-/*function imgd_content_image_sizes_attr( $sizes, $size ) {
+function imgd_content_image_sizes_attr( $sizes, $size ) {
     $width = $size[0];
     840 <= $width && $sizes = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px';
     if ( 'page' === get_post_type() ) {
@@ -94,30 +94,30 @@ add_filter( 'wp_calculate_image_sizes', 'imgd_content_image_sizes_attr', 10 , 2 
  * @param array $size Registered image size or flat array of height and width dimensions.
  * @return string A source size value for use in a post thumbnail 'sizes' attribute.
  */
-/*function imgd_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
+function imgd_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
     if ( 'post-thumbnail' === $size ) {
         is_active_sidebar( 'sidebar-1' ) && $attr['sizes'] = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 984px) 60vw, (max-width: 1362px) 62vw, 840px';
         ! is_active_sidebar( 'sidebar-1' ) && $attr['sizes'] = '(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 88vw, 1200px';
     }
     return $attr;
 }
-add_filter( 'wp_get_attachment_image_attributes', 'imgd_post_thumbnail_sizes_attr', 10 , 3 );*/
+add_filter( 'wp_get_attachment_image_attributes', 'imgd_post_thumbnail_sizes_attr', 10 , 3 );
 
-/*if(!function_exists('imgd_has_slideshow_thumbnail')) {
+if(!function_exists('imgd_has_slideshow_thumbnail')) {
     /**
      * Verifica que haya imagen en el SlideShow
      *
      * @param null $post
      * @return bool
      */
-    /*function imgd_has_slideshow_thumbnail($post = null)
+    function imgd_has_slideshow_thumbnail($post = null)
     {
         return (bool)imgd_get_slideshow_thumbnail_id($post);
     }
 }
-    */
 
-/*
+
+
 
 if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	/**
@@ -129,7 +129,7 @@ if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 	 * @param int|WP_Post $post Optional. Post ID or WP_Post object. Default is global `$post`.
 	 * @return string|int Post thumbnail ID or empty string.
 	 */
-/*
+
 	function imgd_get_slideshow_thumbnail_id($post = null)
 	{
 		$post = get_post($post);
@@ -138,4 +138,4 @@ if(!function_exists('imgd_get_slideshow_thumbnail_id')) {
 		}
 		return get_post_meta($post->ID, 'imgd_image_slideshow', true);
 	}
-}*/
+}

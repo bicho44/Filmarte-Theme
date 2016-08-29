@@ -1246,6 +1246,9 @@ animation:         KEYFRAME-NAME 5s infinite;
   left: 0;
   z-index: 500;
 }
+.site-content {
+  margin-top: 90px;
+}
 /* Colores en los Links */
 .navbar li {
   border-bottom: 2px solid;

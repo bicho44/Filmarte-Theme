@@ -1744,7 +1744,7 @@ a .icon-flip-vertical:before {
   display: inline-block;
   padding: 0 5px;
   font-family: 'FontAwesome', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   vertical-align: top;
   -webkit-font-smoothing: antialiased;
 }
@@ -6509,6 +6509,9 @@ animation:         KEYFRAME-NAME 5s infinite;
   right: 0;
   left: 0;
   z-index: 500;
+}
+.site-content {
+  margin-top: 90px;
 }
 /* Colores en los Links */
 .navbar li {
